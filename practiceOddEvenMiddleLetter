@@ -1,0 +1,27 @@
+your_inp = input('Enter a string with an e in the middle >')
+
+# Length size
+your_length = int(len(your_inp)//2)
+    
+# Index 
+your_index = your_inp[your_length]
+
+# Even & Odd
+odd = len(your_inp) % 2
+#even = len(your_inp) % 1
+
+# If even or odd, evaluate if input has an 'e' in it, but if input doesn't have
+# an 'e' in it, print else
+if odd:
+
+    if your_index == 'e':
+    
+        print("Yes,",str(your_inp), "has e in the middle, at index", str(your_length))
+    
+    else:
+    
+        print("No,",str(your_inp), "has", your_index, "in the middle, at index", str(your_length))
+    
+else:
+    
+    print("No,",str(your_inp), "has no middle character")           
